@@ -1,8 +1,15 @@
-from datetime import datetime
+import datetime
+import pytz
 
+# Set the Réunion timezone
+reunion_tz = pytz.timezone('Indian/Reunion')
 
-current_time = datetime.now()
+# Get the current date and time in UTC
+utc_now = datetime.datetime.utcnow()
 
-current_time_formatted = current_time.strftime("%H:%M:%S")
+# Convert the UTC datetime to the Réunion timezone
+reunion_dt = utc_now.astimezone(reunion_tz)
 
-print(current_time_formatted)
+# Print out the current date and time in the Réunion timezone
+print("The current date and time in Réunion is:")
+print(reunion_dt.strftime("%Y-%m-%d %H:%M:%S"))
