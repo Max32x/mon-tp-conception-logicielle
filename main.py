@@ -1,12 +1,8 @@
-import datetime
-
-import pytz # $ pip install pytz
+from datetime import datetime
 
 
-timezone_paris = pytz.timezone('Europe/Paris')
-
-current_time = datetime.now(timezone_paris)
+current_time = datetime.now()
 
 current_time_formatted = current_time.strftime("%H:%M:%S")
 
-print(current_time_formatted))
+print(current_time_formatted)
