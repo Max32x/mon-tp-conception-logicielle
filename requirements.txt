@@ -1,2 +1,3 @@
-pytz
-datetime
+DateTime==5.4
+pytz==2023.3.post1
+zope.interface==6.1
