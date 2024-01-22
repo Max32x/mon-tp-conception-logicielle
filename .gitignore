@@ -2,5 +2,3 @@ venv/ .vscode/
 venv
 .venv
 
-.toml
-toml
