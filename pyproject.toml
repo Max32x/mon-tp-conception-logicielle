@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "un package partie 1"
+version = "0.1.0"
+description = "oui oui alors c'est la 1ere fois doncje sais pas ce que ça fais"
+authors = ["Ma"]
+license = "oui"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
